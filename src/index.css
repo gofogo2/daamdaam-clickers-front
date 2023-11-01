@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+@font-face {
+  font-family: "SamsungOneUI_GUID-700C";
+  src: url("./assets/fonts/SamsungOneUI_GUID-700C.ttf");
+} */
+
+@font-face {
+  font-family: "SamsungSharpSans-Bold";
+  src: url("./assets/fonts/SamsungSharpSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SamsungSharpSans-Medium";
+  src: url("./assets/fonts/SamsungSharpSans-Medium.ttf");
+}
+
+html{
+    background-color: #f3f3f3;
+}
