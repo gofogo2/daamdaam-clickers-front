@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const instance = axios.create({
-  baseURL: "http://192.168.0.38:4000",
+  baseURL: "http://52.79.180.184:4000",
 });
 
 export const GetAllList = async() => {
