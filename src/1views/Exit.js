@@ -145,18 +145,7 @@ const Exit = () => {
             }}
           >
             {/* <CountButton Add={Add} count={+10} /> */}
-            <div
-              className="flex items-center justify-center w-[47%]   h-36 text-white rounded-xl bg-[#1428a0] active:bg-black"
-              onClick={() => Add(+1)}
-            >
-              <div className="p-0 mt-2 text-7xl ">+1</div>
-            </div>
-            <div
-              className="flex items-center justify-center w-[47%]   h-36 text-white rounded-xl bg-[#1428a0] active:bg-black"
-              onClick={() => Add(+10)}
-            >
-              <div className="p-0 mt-2 text-7xl ">+10</div>
-            </div>
+           
             {/* <CountButton Add={Add} count={+5} /> */}
           </Paper>
           <Paper
