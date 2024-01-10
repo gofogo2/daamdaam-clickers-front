@@ -1,6 +1,6 @@
 import { Container, Grid, Paper, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import { GetAllList } from "../api";
+import { GetAllList,GetAdmin } from "../api";
 import Visitor from "../0components/Visitor";
 import CountChart from "../0components/CountChart";
 import CountTable from "../0components/CountTable";
@@ -31,11 +31,18 @@ const Dashboard = () => {
       let t = 0;
       data.data.forEach((element) => {
         t += element.sum;
-        if (element.day === new Date().getDate()) {
-          setCurrent(element.count);
-        }
+        // if (element.day === new Date().getDate()) {
+        //   setCurrent(element.count);
+        // }
       });
       setTotal(t);
+    });
+    GetAdmin().then((data) => {
+      const {
+        data: { day, all },
+      } = data;
+
+      setCurrent(day);
     });
   };
 
